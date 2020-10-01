@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <!-- Below meta tag fixes zooming in mobile.
+             Prevents zooming in mobiles when we type something in input fields. 
+             By adding "maximum-scale=1.0,user-scalable=0" to the meta tag -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=0" />
+        <link rel="shortcut icon" href="favicon/favicon.ico">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+        <title>Realtime Chat App</title>
+        <script defer src="/socket.io/socket.io.js"></script>
+        <script defer src="js/client.js"></script>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <nav>
+            <span class="logo" role="img" aria-label="emoji">💬</span>
+            <h1>
+                Realtime Chat Application created with Node and Socket.IO
+            </h1> 
+        </nav>
+        <div class="container">
+            <!-- <div class="message right">Gk: Hey!</div>
+            <div class="message left">RB: Hello</div>
+            <div class="message left">RB: How are you?</div>
+            <div class="message right">Gk: I'm Good. Thanks.</div>
+            <div class="message middle">RB left the chat.</div> -->
+        </div>
+        <div>
+            <form action="#" id="send-container">
+                <input type="text" name="messageInp" id="messageInp" placeholder="Write a message...">
+                <button class="btn" type="submit">
+                    <i class="fa fa-send" style="font-size: larger;"></i>
+                </button>
+            </form>
+        </div>
+    </body>
+</html>
